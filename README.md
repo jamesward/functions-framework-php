@@ -163,7 +163,7 @@ You can configure the Functions Framework using the environment variables shown 
 | Environment variable      | Description
 | ------------------------- | -----------
 | `FUNCTION_TARGET`         | The name of the exported function to be invoked in response to requests.
-| `FUNCTION_SIGNATURE_TYPE` | The signature used when writing your function. Controls unmarshalling rules and determines which arguments are used to invoke your function. Can be either `http` or `event`.
+| `FUNCTION_SIGNATURE_TYPE` | The signature used when writing your function. Controls unmarshalling rules and determines which arguments are used to invoke your function. Can be either `http` or `event`. Default: `http`
 
 # Enable CloudEvents
 

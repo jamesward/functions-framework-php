@@ -50,7 +50,7 @@ if ($functionSource = getenv('FUNCTION_SOURCE', true)) {
 (function () {
     $target = getenv('FUNCTION_TARGET', true);
     if (false === $target) {
-        $target = 'function';
+        throw new RuntimeException('FUNCTION_TARGET is not set');
     }
     $signatureType = getenv('FUNCTION_SIGNATURE_TYPE', true) ?: 'http';
 

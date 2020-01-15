@@ -144,7 +144,7 @@ with the request object.
 
 [Google Cloud Functions](https://cloud.google.com/functions/docs) does _not_ have native support for PHP. Furthermore, it _can not_ use custom Function Frameworks.
 
-To get around these restrictions, we can use a Knative-based hosting platform such as [Cloud Run](https://cloud.google.com/run/docs) or Cloud Run on GKE](https://cloud.google.com/run/docs/gke/setup).
+To get around these restrictions, we can use a Knative-based hosting platform such as [Cloud Run](https://cloud.google.com/run/docs) or [Cloud Run on GKE](https://cloud.google.com/run/docs/gke/setup).
 
 ## Cloud Run/Cloud Run on GKE
 
@@ -163,7 +163,8 @@ You can configure the Functions Framework using the environment variables shown 
 | Environment variable      | Description
 | ------------------------- | -----------
 | `FUNCTION_TARGET`         | The name of the exported function to be invoked in response to requests.
-| `FUNCTION_SIGNATURE_TYPE` | The signature used when writing your function. Controls unmarshalling rules and determines which arguments are used to invoke your function. Can be either `http` or `event`.
+| `FUNCTION_SOURCE`         | The name of the file containing the source code for your function to load. Default: **`index.php`**
+| `FUNCTION_SIGNATURE_TYPE` | The signature used when writing your function. Controls unmarshalling rules and determines which arguments are used to invoke your function. Can be either `http` or `event`. Default: **`http`**
 
 # Enable CloudEvents
 

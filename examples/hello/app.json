@@ -2,12 +2,12 @@
     "name": "functions-framework-php-hello",
     "env": {
         "FUNCTION_TARGET": {
-            "description": "the function name to call (you probably don't need to change this)",
+            "description": "the function name to call - you probably don't need to change this, so just hit *enter*",
             "value": "helloHttp",
             "required": true
         },
         "FUNCTION_SIGNATURE_TYPE": {
-            "description": "the function signature type (you probably don't need to change this)",
+            "description": "the function signature type - you probably don't need to change this, so just hit *enter*",
             "value": "http",
             "required": true
         }
